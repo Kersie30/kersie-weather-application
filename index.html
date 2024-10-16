@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/styles.css" />
-    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>"
+   <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+   
     <title>kersie app</title>
   </head>
   <body>
@@ -12,7 +13,7 @@
       <header>
         <form class="search-form" id="search-form">
           <input
-            type="seach"
+            type="search"
             placeholder="Enter a city.."
             required 
             id="search-form-input"
@@ -24,8 +25,8 @@
       <main>
         <div class="weather-app-data">
           <div>
-            <h1 class="weather--app-city" id="city">Paris</h1>
-            <p class="wether-app-details">
+            <h1 class="weather-app-city" id="city"></h1>
+            <p class="weather-app-details">
               Tuesday 14:49, scattered clouds
               <br />
               Humidity: <strong>66%</strong>, wind: <strong>3.13km/h</strong>
@@ -33,8 +34,8 @@
           </div>
 
           <div class=" weather-app-temperature-container">
-            <div class="wether-app-icon">🌤️</div>
-           <div class="weather-app-temperature">12</div>
+            <div class="weather-app-icon">🌤️</div>
+           <div class="weather-app-temperature" id="temperature"></div>
            <div class="weather-app-unit">&deg;C</div>
         </div>
       </main>
