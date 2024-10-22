@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/styles.css" />
-   <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
-   
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+
     <title>kersie app</title>
   </head>
   <body>
@@ -15,7 +15,7 @@
           <input
             type="search"
             placeholder="Enter a city.."
-            required 
+            required
             id="search-form-input"
             class="search-form-input"
           />
@@ -27,22 +27,21 @@
           <div>
             <h1 class="weather-app-city" id="city"></h1>
             <p class="weather-app-details">
-             <span id="time"></span>
-             <span id="description"></span>
+              <span id="time"></span>
+              <span id="description"></span>
               <br />
-              Humidity: <strong id="humidity"></strong>, 
-              wind: <strong id="wind-speed"></strong>
+              Humidity: <strong id="humidity"></strong>, wind:
+              <strong id="wind-speed"></strong>
             </p>
           </div>
 
-          <div class=" weather-app-temperature-container">
-            <div id="icon">
-<img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-day.png"
-class="weather-app-icon"/>
-            </div>
-           <div class="weather-app-temperature" id="temperature"></div>
-           <div class="weather-app-unit">&deg;C</div>
+          <div class="weather-app-temperature-container">
+            <div id="icon"></div>
+            <div class="weather-app-temperature" id="temperature"></div>
+            <div class="weather-app-unit">&deg;C</div>
+          </div>
         </div>
+        <div class="weather-forecast" id="forecast"></div>
       </main>
       <footer>
         This project coded by
