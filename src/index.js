@@ -66,9 +66,8 @@ function formatDay(timestamp) {
 }
 
 function displayForecast(response) {
-  console.log(response.data);
-
   let forecastHtml = "";
+
   response.data.daily.forEach(function (day, index) {
     if (index < 5) {
       forecastHtml =
@@ -85,6 +84,7 @@ function displayForecast(response) {
               <div class="weather-forecast-temperature">${Math.round(
                 day.temperature.minimum
               )}°</div>
+              </div>
             </div>`;
     }
   });
